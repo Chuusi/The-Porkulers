@@ -1,0 +1,54 @@
+.contact{
+    background-color: black;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    padding-bottom: 5vh;
+}
+
+.contact_title{
+    font-size: 5em;
+}
+
+
+.contact_list{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    gap: 80px;
+}
+
+.contact_list *{
+    font-size: 1.6em;
+    text-decoration: none;
+}
+
+.contact_list li i{
+    margin-right: 20px;
+}
+
+
+.contact_list a{
+    font-family: Verdana,Geneva,Tahoma,sans-serif;
+}
+
+.whatsapp:hover{
+    cursor:default;
+}
+
+@media only screen and (max-width: 425px){
+    .contact_list *{
+        font-size: 1.1em;
+    }
+    .contact_title{
+        font-size: 1em;
+        text-align: center;
+    }
+}

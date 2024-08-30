@@ -1,0 +1,107 @@
+.songs{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.songs_page_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.song_container{
+    width: 80%;
+    max-width: 800px;
+    list-style: none;
+    padding: 10px;
+    font-size: 1.6em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.song_container li{
+    padding-left: 10px;
+}
+
+.play_icon{
+    padding-left: 10px;
+}
+
+.play_icon:hover{
+    cursor: pointer;
+}
+
+.disc_img{
+    width: 80px;
+    
+}
+
+.every_song{
+    display: flex;
+    align-items: center;
+}
+
+.every_song_all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px 0px;
+}
+
+.every_song_all *{
+    color: black;
+}
+
+.duration{
+    font-size: .6em;
+    padding-right: 10px;
+}
+
+.audio_player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+}
+
+.audio_player_react{
+    background-color: black !important;
+    color: white !important;
+    width: 80% !important;
+    text-align: center;
+}
+
+.rhap_time{
+    color: white !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.song_title{
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width:425px) {
+
+    .song_title{
+        font-size: 1em;
+    }
+    .audio_controller{
+        width: 100%;
+    }
+
+    .song_container{
+        font-size: 1.1em;
+    }
+
+    .songs_page_container{
+        justify-content: center;
+        gap: 50px;
+    }
+}

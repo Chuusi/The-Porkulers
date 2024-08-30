@@ -1,0 +1,13 @@
+.events{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.events_container{
+    width: 80%;
+}
+

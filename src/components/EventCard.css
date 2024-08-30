@@ -1,0 +1,42 @@
+.event_card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.event_card * {
+    color: black;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.date{
+    text-align: center;
+}
+
+.day{
+    font-size: 2.7em;
+}
+
+.month{
+    font-size: 1.5em;
+}
+
+.year{
+    font-size: 1.25em;
+}
+
+.place_container{
+    width: 40%;
+    font-size: 2em;
+    text-align: end;
+}
+
+@media only screen and (max-width:425px) {
+    .place_container{
+        font-size: 1.5em;
+    }
+}

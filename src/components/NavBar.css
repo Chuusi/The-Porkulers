@@ -1,0 +1,112 @@
+.navbar{
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    z-index: 1;
+}
+
+.navlist{
+    padding: 0px 50px;
+    font-size: 1.5em;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.navlist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    font-family: myFont;
+    padding: 0px 2px;
+}
+
+.navlist li:hover{
+    animation-name: shake;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+/* 
+.navlist li a,
+.navlist li a:after,
+.navlist li a:before {
+    transition: all .5s;
+}
+
+.navlist li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+.navlist li a:hover:after{
+    width: 100%;
+} */
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@media only screen and (max-width:1325px) and (min-width:931px){
+    .navlist{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width:930px){
+    .navbar{
+        display: none;
+    }
+}

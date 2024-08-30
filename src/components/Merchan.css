@@ -1,0 +1,27 @@
+.merchan_page{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+}
+
+.merchan{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+
+@media only screen and (max-width:425px){
+    .page_title{
+        font-size: 1.17em;
+    }
+}
